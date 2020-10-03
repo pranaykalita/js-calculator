@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+
+}
+
+.heading {
+    background: rgb(204, 12, 183);
+    background: linear-gradient(99deg, rgba(204, 12, 183, 1) 0%, rgba(188, 0, 255, 1) 100%);
+    top: 0;
+    padding: 50px 0 0 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.heading svg {
+    display: block;
+}
+
+.heading h1 {
+    font-weight: 400;
+    margin: 0;
+    font-size: 4rem;
+}
+
+.heading h2 {
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 15px;
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+.heading a {
+    color: rgb(77, 0, 219);
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.footer {
+    background: rgb(245, 0, 255);
+    background: linear-gradient(180deg, rgba(245, 0, 255, 1) 0%, rgba(255, 0, 174, 1) 100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.footer p {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+
+
+#calculator {
+    margin-bottom: 2rem;
+    height: 850px;
+    width: 490px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 10px 10px 38px -9px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+}
+
+
+#keys {
+    height: 550px;
+    padding-top: 40px;
+}
+
+#output {
+    width: 490px;
+    height: 150px;
+    font-size: 65px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    border: 0;
+    color: black;
+    transition: color .5s;
+
+}
+
+#output:hover {
+    color: rgb(94, 94, 94);
+
+}
+
+#oparator,
+#number,
+#empty {
+    width: 90px;
+    height: 90px;
+    margin: 15px;
+    float: left;
+    font-weight: 500;
+    font-size: 28px;
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+    background: rgb(248, 248, 248);
+    border-radius: 50%;
+    transition: transform .2s;
+
+}
+
+#oparator:hover,
+#number:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgb(83, 83, 83);
+    transform: scale(1.2);
+}
+
+#oparator:active,
+#number:active {
+    border: 1px solid red;
+}

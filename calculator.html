@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1000; user-scalable=0;" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="calc.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>CALCULATOR</h1>
+        <h2>pranay Kalita</h2>
+        <a href="https://www.facebook.com/pranay.nova" target="_blank"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://www.instagram.com/i__am__nova/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/N0v4c0r3" target="_blank"><i class="fa fa-github"></i></a>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,224L48,234.7C96,245,192,267,288,250.7C384,235,480,181,576,176C672,171,768,213,864,234.7C960,256,1056,256,1152,229.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+
+    </div>
+
+    <div class="container">
+        <div id="calculator">
+
+            <p align="center" style="color:rgb(136, 136, 136);">maximum input 12 digits</p>
+            <form name="result" class="result">
+                <input name="outloc" id="output" maxlength="11">
+            </form>
+
+            <div id="keys">
+
+                <input onclick="clr()" type="button" id="oparator" value="C">
+                <input onclick="rmv()" type="button" id="oparator" value="&larr;">
+                <input onclick="sqrt()" type="button" id="oparator" value="X&#xb2;">
+                <input onclick="clacfunc('/')" type="button" id="oparator" value="&#247;">
+
+                <input onclick="clacfunc(1)" type="button" id="number" value="1">
+                <input onclick="clacfunc(2)" type="button" id="number" value="2">
+                <input onclick="clacfunc(3)" type="button" id="number" value="3">
+                <input onclick="clacfunc('*')" type="button" id="oparator" value="&times;">
+
+                <input onclick="clacfunc(4)" type="button" id="number" value="4">
+                <input onclick="clacfunc(5)" type="button" id="number" value="5">
+                <input onclick="clacfunc(6)" type="button" id="number" value="6">
+                <input onclick="clacfunc('+')" type="button" id="oparator" value="+">
+
+                <input onclick="clacfunc(7)" type="button" id="number" value="7">
+                <input onclick="clacfunc(8)" type="button" id="number" value="8">
+                <input onclick="clacfunc(9)" type="button" id="number" value="9">
+                <input onclick="clacfunc('-')" type="button" id="oparator" value="-">
+
+
+
+                <input onclick="clacfunc('00')" type="button" id="number" value="00">
+                <input onclick="clacfunc(0)" type="button" id="number" value="0">
+                <input onclick="clacfunc('.')" type="button" id="number" value=".">
+                <input onclick="calculate()" type="button" id="oparator" value="=">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <p>copyright &#169; pranay kalita | 2020 All right reserved </p>
+    </div>
+</body>
+
+</html>
